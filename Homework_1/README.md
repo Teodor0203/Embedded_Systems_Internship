@@ -9,7 +9,7 @@ Cycle this infinitely.
 
 The time between sequences is 500 milliseconds.
 
-![Bargraph](Images/T1_Ex1.png)
+![Bargraph](../Images/T1_Ex1.png)
 
 ## Exercise 2
 
@@ -22,6 +22,6 @@ The time between each "move" is 500 milliseconds.
 
 Extra: At the end shift them in opposite direction.
 
-![Bargraph](Images/T2_Ex2.png)
+![Bargraph](../Images/T2_Ex2.png)
 
 
