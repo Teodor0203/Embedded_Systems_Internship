@@ -1,2 +1,2 @@
-# Embedded Apps
+# Embedded Applications
 
