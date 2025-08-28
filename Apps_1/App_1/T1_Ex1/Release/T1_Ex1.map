@@ -153,7 +153,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000      0x13a
+.text           0x00000000      0x130
  *(.vectors)
  .vectors       0x00000000       0xe4 D:/Program Files/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega2560/avr6/crtatmega2560.o
                 0x00000000                __vector_default
@@ -268,13 +268,13 @@ END GROUP
                 0x000000fa                . = ALIGN (0x2)
  *(.text.*)
  .text.startup.main
-                0x000000fa       0x3c main.o
+                0x000000fa       0x32 main.o
                 0x000000fa                main
-                0x00000136                . = ALIGN (0x2)
+                0x0000012c                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00000136        0x0 d:/program files/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_exit.o)
-                0x00000136                _exit
-                0x00000136                exit
+ .fini9         0x0000012c        0x0 d:/program files/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_exit.o)
+                0x0000012c                _exit
+                0x0000012c                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -293,11 +293,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00000136        0x4 d:/program files/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_exit.o)
+ .fini0         0x0000012c        0x4 d:/program files/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_exit.o)
  *(.fini0)
-                0x0000013a                _etext = .
+                0x00000130                _etext = .
 
-.data           0x00800200        0x0 load address 0x0000013a
+.data           0x00800200        0x0 load address 0x00000130
                 [!provide]                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
@@ -315,8 +315,8 @@ END GROUP
  *(.bss*)
  *(COMMON)
                 [!provide]                PROVIDE (__bss_end, .)
-                0x0000013a                __data_load_start = LOADADDR (.data)
-                0x0000013a                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00000130                __data_load_start = LOADADDR (.data)
+                0x00000130                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x00800200        0x0
                 [!provide]                PROVIDE (__noinit_start, .)

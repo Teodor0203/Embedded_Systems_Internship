@@ -12,20 +12,16 @@
 
 int main(void)
 {
-	DDRB = 0xFF;
-	DDRD = 0xFF;
+	DDRC = 0xFF;
     /* Replace with your application code */
     while (1) 
     {
-		PORTB = (1 << PB7) | (1 << PB5);
-		PORTD = (1 << PD3) | (1 << PD1);
+		PORTC = (1 << PC0) | (1 << PC2) | (1 << PC4) | (1 << PC6);
 		
 		_delay_ms(500);
 		
-		PORTB = (1 << PB6) | (1 << PB4);
-		PORTD = (1 << PD2) | (1 << PD0); 
+		PORTC = (1 << PC1) | (1 << PC3) | (1 << PC5) | (1 << PC7);
 
-	
 		_delay_ms(500);
     }
 }
