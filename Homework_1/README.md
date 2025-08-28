@@ -1,6 +1,5 @@
-# Homework 1
 
-## Ecercise 1
+## App 1
 
 **Bitwise manipulation**
 **Requirement: perform the alternate blink of odd and even LEDs:**
@@ -11,7 +10,7 @@ The time between sequences is 500 milliseconds.
 
 ![Bargraph](../Images/T1_Ex1.png)
 
-## Exercise 2
+## App 2
 
 **Bitwise manipulation**
 **Requirement: turn on the first two LEDs of the bargraph and then "move" them right LED by LED**
