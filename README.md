@@ -1,3 +1,2 @@
-# Embedded Systems Internship
+# Embedded Apps
 
-Projects and homework from my current internship.
